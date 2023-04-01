@@ -56,10 +56,28 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   }
   @override
   Widget build(BuildContext context) {
+
+    // build function to build each object
+    buildTransformObject(value, width, height, color) {
+      return
+      Transform.rotate(
+        angle: _rotationAnimation.value + value,
+        child: Container(
+          width: width,
+          height: height,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(_radiusAnimation.value),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: Colors.deepPurple[300],
       body: Center(
         child: Stack(
+          alignment: Alignment.center,
           children: [
             /* 
             biggest object
@@ -67,14 +85,33 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             V
             smallest object
             */
-            Container(
-              width: 225,
-              height: 225,
-              decoration: BoxDecoration(
-                color: Colors.deepPurple[400],
-                borderRadius: BorderRadius.circular(24),
-              ),
-            ),
+
+            // first, biggest object
+            buildTransformObject(0.0, 225.0, 225.0, Colors.deepPurple[400]),
+
+            // second object
+            buildTransformObject(0.2, 200.0, 200.0, Colors.deepPurple[500]),
+
+            // third object
+            buildTransformObject(0.4, 175.0, 175.0, Colors.deepPurple[600]),   
+
+            // fourth object
+            buildTransformObject(0.6, 150.0, 150.0, Colors.deepPurple[700]),
+
+            // fifth object
+            buildTransformObject(0.8, 125.0, 125.0, Colors.deepPurple[800]),
+
+            // sixth object
+            buildTransformObject(1.0, 100.0, 100.0, Colors.deepPurple[900]),
+
+            // seventh object
+            buildTransformObject(1.2, 75.0, 75.0, Colors.deepPurple[1000]),
+
+            // eighth object
+            buildTransformObject(1.4, 50.0, 50.0, Colors.deepPurple[1100]),
+
+            // last, smallest object
+            buildTransformObject(1.6, 25.0, 25.0, Colors.deepPurple[1200]),
           ],
         ),
       ),
