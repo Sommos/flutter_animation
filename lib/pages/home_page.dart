@@ -59,15 +59,29 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
     // build function to build each object
     buildTransformObject(value, width, height, color) {
-      return
-      Transform.rotate(
+      return Transform.rotate(
         angle: _rotationAnimation.value + value,
         child: Container(
           width: width,
           height: height,
           decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(_radiusAnimation.value),
+            borderRadius: BorderRadius.all(
+              Radius.circular(
+                _radiusAnimation.value,
+              ),
+            ),
+            boxShadow: [
+              // add shadows to each object
+              BoxShadow(
+                color: Color(color).withOpacity(0.8),
+                offset: const Offset(-6.0, -6.0),
+              ),
+              BoxShadow(
+                color: Colors.black.withOpacity(0.8),
+                offset: const Offset(6.0, 6.0),
+              ),
+            ],
+            color: Color(color)
           ),
         ),
       );
@@ -77,6 +91,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       backgroundColor: Colors.deepPurple[300],
       body: Center(
         child: Stack(
+          clipBehavior: Clip.hardEdge,
           alignment: Alignment.center,
           children: [
             /* 
@@ -87,31 +102,31 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             */
 
             // first, biggest object
-            buildTransformObject(0.0, 225.0, 225.0, Colors.deepPurple[400]),
+            buildTransformObject(0.0, 225.0, 225.0, 0xFF692d94),
 
             // second object
-            buildTransformObject(0.2, 200.0, 200.0, Colors.deepPurple[500]),
+            buildTransformObject(0.2, 200.0, 200.0, 0xFF5f2985),
 
             // third object
-            buildTransformObject(0.4, 175.0, 175.0, Colors.deepPurple[600]),   
+            buildTransformObject(0.4, 175.0, 175.0, 0xFF542476),   
 
             // fourth object
-            buildTransformObject(0.6, 150.0, 150.0, Colors.deepPurple[700]),
+            buildTransformObject(0.6, 150.0, 150.0, 0xFF4a1f68),
 
             // fifth object
-            buildTransformObject(0.8, 125.0, 125.0, Colors.deepPurple[800]),
+            buildTransformObject(0.8, 125.0, 125.0, 0xFF3f1b59),
 
             // sixth object
-            buildTransformObject(1.0, 100.0, 100.0, Colors.deepPurple[900]),
+            buildTransformObject(1.0, 100.0, 100.0, 0xFF35174a),
 
             // seventh object
-            buildTransformObject(1.2, 75.0, 75.0, Colors.deepPurple[1000]),
+            buildTransformObject(1.2, 75.0, 75.0, 0xFF2a123b),
 
             // eighth object
-            buildTransformObject(1.4, 50.0, 50.0, Colors.deepPurple[1100]),
+            buildTransformObject(1.4, 50.0, 50.0, 0xFF1f0d2c),
 
             // last, smallest object
-            buildTransformObject(1.6, 25.0, 25.0, Colors.deepPurple[1200]),
+            buildTransformObject(1.6, 25.0, 25.0, 0xFF15091e),
           ],
         ),
       ),
