@@ -1,10 +1,10 @@
 # Flutter Animation
 
-This program is to test flutter and dart, testing out basic a basic animation.
+This program is designed to test the Flutter and Dart algorithms that initialize the principles of Flutter animation. In this repository you will be given an on-board view of my basic animation aimed to express these very concepts.
 
 # Contribution 
 
-If you'd like to contribute to `flutter_animation` please submit a pull-request on a feature branch.
+This program is dedicated to open source, if you'd like to contribute to `flutter_animation` please submit a pull-request on a feature branch.
 
 # Installing
 
