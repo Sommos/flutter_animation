@@ -52,8 +52,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         _controller.forward();
       }
     });
-
   }
+
   @override
   Widget build(BuildContext context) {
 

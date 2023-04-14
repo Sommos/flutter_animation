@@ -12,3 +12,8 @@ Clone the repo:
 
     git clone https://github.com/Sommos/flutter_animation
     cd flutter_animation
+
+<p align="center">
+    <img src="lib/images/readme/start_animation.png" width="250" />
+    <img src="lib/images/readme/end_animation.png" width="250" />
+</p>
