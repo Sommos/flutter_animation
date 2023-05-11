@@ -28,6 +28,8 @@
 
 This program is designed to test the flutter and dart Algorithms that initializes the principles of Flutter animation. In the repository you will be given a on-board view of my basic animation aimed to express these very concepts
 
+This has been built into a web application accessible here: https://sommos.github.io/flutter_animation/
+
 <br>
 </br>
 
