@@ -56,12 +56,12 @@ If you'd like to contribute to `flutter_animation` please submit a pull-request 
 In order to installing the application and its contents use the following:
 <br>
 </br>
-1. Cloning methods (CMD) - console
+1. cloning methods (CMD) - console
 
     - On top Right you will notice "code", click on it which showcases the “ Local “ branch, HTTPS with the link inside the field.
     - Click on the link and “Copy” Ctrl + c
 
-    - Go to your windows search Bar, and write “ Cmd “, and right click on it, opening it as an “Admin” or “Administrator”.
+    - Go to your windows search Bar, and write “cmd “, and right click on it, opening it as an “Administrator”.
 
     - Once opened you can locate your desired path or location where you wish to store the repository components, I recommend doing it on your route Drive -> main drive commonly the “ C “ drive.
 
@@ -77,11 +77,10 @@ In order to installing the application and its contents use the following:
 
     - Press enter and being the download
 
+    - Once downloaded you can go to the File by using “cd”, change directory, in which you will enter < cd flutter_animation > to get to your desired folder location!
 
-    - Once downloaded you can go to the File by using “Cd”, change directory, in which you will enter < cd flutter_animation > to get to your desired folder location!
 
-
-2. .Zip File
+2. .zip file
 
     - In this case you cannot commit changes, but you can test around with the functionality and get the main files as desired.
     - On top Right you will notice code, click on it which showcases the “ Local “ branch select “Download Zip”
